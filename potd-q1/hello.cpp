@@ -5,7 +5,7 @@ std::string hello(){
     std :: string str = "Hello world! My name is ";
     str += name;
     str += " and I am ";
-    str += age;
+    str.append(std::to_string(age));
     str +=" years old.";
     return str;
 }
